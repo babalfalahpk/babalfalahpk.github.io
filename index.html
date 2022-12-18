@@ -2,142 +2,443 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Bab Al Falah Travel & Tours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Bab Al Falah Travel & Tours" name="keywords">
+    <meta content="Bab Al Falah Travel & Tours" name="description">
 
-    <meta charset="UTF-8">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <meta name="apple-mobile-web-app-title" content="Babalfalah">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <title>Babalfalah</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script>document.addEventListener("touchstart", function () { }, true);</script>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-
-    <style>
-        body {
-            background: #00091B;
-            color: #fff;
-        }
-
-
-        @keyframes fadeIn {
-            from {
-                top: 20%;
-                opacity: 0;
-            }
-
-            to {
-                top: 100;
-                opacity: 1;
-            }
-
-        }
-
-        @-webkit-keyframes fadeIn {
-            from {
-                top: 20%;
-                opacity: 0;
-            }
-
-            to {
-                top: 100;
-                opacity: 1;
-            }
-
-        }
-
-        .wrapper {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            animation: fadeIn 1000ms ease;
-            -webkit-animation: fadeIn 1000ms ease;
-
-        }
-
-        h1 {
-            font-size: 50px;
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 0;
-            line-height: 1;
-            font-weight: 700;
-        }
-
-        .dot {
-            color: #4FEBFE;
-        }
-
-        p {
-            text-align: center;
-            margin: 18px;
-            font-family: 'Muli', sans-serif;
-            font-weight: normal;
-
-        }
-
-        .icons {
-            text-align: center;
-
-        }
-
-        .icons i {
-            color: #00091B;
-            background: #fff;
-            height: 15px;
-            width: 15px;
-            padding: 13px;
-            margin: 0 10px;
-            border-radius: 50px;
-            border: 2px solid #fff;
-            transition: all 200ms ease;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .icons i:hover,
-        .icons i:active {
-            color: #fff;
-            background: none;
-            cursor: pointer !important;
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            text-decoration: none;
-
-        }
-    </style>
-
-    <script>
-        window.console = window.console || function (t) { };
-    </script>
-
-
-
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
-
-
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body translate="no">
-    <div class="wrapper">
-        <h1>coming soon<span class="dot">.</span></h1>
-        <p>Babalfalah Travels</p>
-        <div class="icons">
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-youtube-play"></i></a>
-            <a href=""><i class="fa fa-paper-plane"></i></a>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><a href="mailto:babalfalahtravels@gmail.com"><i class="fa fa-envelope mr-2"></i>babalfalahtravels@gmail.com</a></p>
+                        <p class="text-body px-3">|</p>
+                        <p><a href="tel:+923017459457"><i class="fa fa-phone-alt mr-2"></i>+92 301 7459457</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/babalfalahofficial">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://instagram.com/babalfalah.pk">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Topbar End -->
 
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">BAB</span>AL<span class="text-dark">FALAH</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="package.html" class="nav-item nav-link">Packages</a>
+                        <a href="destination.html" class="nav-item nav-link">Destination</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/umra-slide.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
+                            <h2 class="display-3 text-white mb-md-4">Hajj & Umrah</h2>
+                            <a href="https://wa.me/923017459457" class="btn btn-success rounded py-md-3 px-md-5 mt-2"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/tickets-slide.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Bookings</h4>
+                            <h1 class="display-3 text-white mb-md-4">Tickets & Hotels</h1>
+                            <a href="https://wa.me/923017459457" class="btn btn-success rounded py-md-3 px-md-5 mt-2"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/visa-slide.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Applications</h4>
+                            <h1 class="display-3 text-white mb-md-4">Visa</h1>
+                            <a href="https://wa.me/923017459457" class="btn btn-success rounded py-md-3 px-md-5 mt-2"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
+                        <h1 class="mb-3">We Provide Best Prices & Packages</h1>
+                        <p>If you are planning your next trip to the world and looking for best and cheap holiday packages or flights then you are on right place. BabAlfalah.pk is the largest platform to find best and cheap flights, Umrah, Visit visas, and other Travel deals.</p>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/umra.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/tickets.jpg" alt="">
+                            </div>
+                        </div>
+                        <a href="https://wa.me/923017459457" class="btn btn-success rounded mt-1"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 60px; width: 60px;">
+                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Best Pricing</h5>
+                            <p class="m-0">Best competitive pricing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 60px; width: 60px;">
+                            <i class="fa fa-2x fa-award text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Best Services</h5>
+                            <p class="m-0">Avaiable 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 60px; width: 60px;">
+                            <i class="fa fa-2x fa-plane text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Best Airlines</h5>
+                            <p class="m-0">World Best Airlines available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+    
+    <!-- SN Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
+                <h1>Tours & Travel Services</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/umra.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Umrah</h5>
+                            <span>Best & Cheap Packages</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/tickets.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Tickets</h5>
+                            <span>Online Tickets</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/visa.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Visa</h5>
+                            <span>Applications</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SN Start -->
+
+
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
+                <h1>Explore Top Destination</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Saudi Arabia</h5>
+                            <span>Major Cities</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">United Arab Emirates</h5>
+                            <span>Major Cities</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Qatar</h5>
+                            <span>Major Cities</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Oman</h5>
+                            <span>Major Cities</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">United Kingdom</h5>
+                            <span>100 Cities</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Bahrain</h5>
+                            <span>Major Cities</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+
+    <!-- Packages Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
+                <h1>Pefect Tour Packages</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Saudi Arabia</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>14 days</small>
+                                <!-- <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small> -->
+                            </div>
+                            <a class="h5 text-decoration-none" href="">14 days Umrah package</a>
+                            <!-- <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Saudi Arabia</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>21 days</small>
+                                <!-- <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small> -->
+                            </div>
+                            <a class="h5 text-decoration-none" href="">21 days Umrah package</a>
+                            <!-- <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Saudi Arabia</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>30 days</small>
+                                <!-- <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small> -->
+                            </div>
+                            <a class="h5 text-decoration-none" href="">30 days Umrah package</a>
+                            <!-- <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Packages End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">BAB</span>AL<span class="text-white">FALAH</span></h1>
+                </a>
+                <p>Travels &  Tours</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/babalfalahofficial"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="https://instagram.com/babalfalah.pk"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><a href="tel:+923017459457"><i class="fa fa-phone-alt mr-2"></i>+92 301 7459457</a></p>
+                <p><a href="mailto:babalfalahtravels@gmail.com"><i class="fa fa-envelope mr-2"></i>babalfalahtravels@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">babalfalah.pk</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
